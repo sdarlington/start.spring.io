@@ -703,6 +703,28 @@ initializr:
           artifactId: postgresql
           scope: runtime
           starter: false
+        - name: Apache Ignite (Thin Client)
+          id: apache-ignite-thin
+          description: Apache Ignite is a distributed database for high‑performance applications with in‑memory speed. This connects using the thin client.
+          groupId: org.apache.ignite
+          artifactId: ignite-spring-boot-thin-client-autoconfigure-ext
+          version: 1.0.0
+          starter: false
+          links:
+            - rel: guide
+              href: https://ignite.apache.org/docs/latest/extensions-and-integrations/spring/spring-boot
+              description: Configuring Apache Ignite thin-client
+        - name: Apache Ignite (Thick Client)
+          id: apache-ignite-thick
+          description: Apache Ignite is a distributed database for high‑performance applications with in‑memory speed. This connects using the thick client.
+          groupId: org.apache.ignite
+          artifactId: ignite-spring-boot-autoconfigure-ext
+          version: 1.0.0
+          starter: false
+          links:
+            - rel: guide
+              href: https://ignite.apache.org/docs/latest/extensions-and-integrations/spring/spring-boot
+              description: Configuring Apache Ignite thick-client
     - name: NoSQL
       content:
         - name: Spring Data Redis (Access+Driver)
